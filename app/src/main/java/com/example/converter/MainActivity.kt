@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
     fun isRomaji(w: String): Boolean {
         var romaji = true
         for (c in w) {
-            if (c !in 'a' .. 'z') romaji = false
+            if (c !in 'a' .. 'z' &&  c  !== ' '  ) romaji = false
         }
         return romaji
     }
